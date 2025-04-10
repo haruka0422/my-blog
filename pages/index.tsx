@@ -6,7 +6,7 @@ import Head from "next/head";
 import { CMS_NAME } from "../lib/constants";
 import Post from "../interfaces/post";
 import Image from "next/image";
-// import Cover from "../public/assets/cover.jpg";
+import Cover from "../public/assets/coverアイコン.jpg";
 
 type Props = {
   allPosts: Post[];
@@ -25,7 +25,7 @@ export default function Index({ allPosts }: Props) {
           <Header />
           <Image
             className="w-full"
-            src="../public/assets/coverアイコン.jpg"
+            src={Cover}
             alt="Picture of the author"
             width={500}
             height={500}
